@@ -5,16 +5,17 @@ package io.github.anthonyeef.v2jobs.data;
  */
 public class FeedItem {
     private int id;
-    private String name, avatar, timeStamp;
+    private String name, avatar, timeStamp, title;
 
     public FeedItem() {}
 
-    public FeedItem(int id, String name, String avatar, String timeStamp){
+    public FeedItem(int id, String name, String avatar, String timeStamp, String title){
         super();
         this.id = id;
         this.name = name;
         this.avatar = avatar;
         this.timeStamp = timeStamp;
+        this.title = title;
     }
 
     public int getId() {
@@ -47,5 +48,13 @@ public class FeedItem {
 
     public void setTimeStamp(String timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
